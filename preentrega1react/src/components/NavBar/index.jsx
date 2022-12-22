@@ -4,8 +4,9 @@ import "./styles.css";
 function NavBar() {
   return (
     <header className="p-3 bg-dark text-white">
-      <div className="container">
+      <div className="container-fluid">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <span className="cart_items_deco">2</span>
           <a
             href="/"
             className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -21,42 +22,38 @@ function NavBar() {
             </svg>
           </a>
 
-          <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ">
+          <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 align-items-center ">
             <li>
-              <h2 className="pe-4 text-secondary"> Quemirabobo </h2>
+              <h2 className="pe-4 text-secondary"> Avicola Campomoro </h2>
             </li>
             <li>
               <a href={" "} className="nav-link px-2 text-white">
-                Features
+                Pollo
               </a>
             </li>
             <li>
               <a href={" "} className="nav-link px-2 text-white">
-                Pricing
+                Carnes
               </a>
             </li>
             <li>
               <a href={" "} className="nav-link px-2 text-white">
-                FAQs
+                Rebozados
               </a>
             </li>
             <li>
               <a href={" "} className="nav-link px-2 text-white">
-                About
+                Almacen
               </a>
             </li>
           </ul>
 
-          {/* <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-          <input type="search" className="form-control form-control-dark" placeholder="Search..." aria-label="Search">
-        /> */}
-
           <div className="text-end">
             <button type="button" className="btn btn-outline-light me-2">
-              Login
+              Iniciar Sesion
             </button>
             <button type="button" className="btn btn-warning">
-              Sign-up
+              Registrarse
             </button>
           </div>
         </div>
